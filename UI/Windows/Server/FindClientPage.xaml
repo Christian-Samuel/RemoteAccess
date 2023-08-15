@@ -1,0 +1,19 @@
+﻿<Page x:Class="UI.Windows.Server.FindClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UI.Windows.Server"
+      mc:Ignorable="d" 
+      d:DesignHeight="311.25" d:DesignWidth="312.5"
+      Title="FindClientPage">
+
+    <Grid Background="White">
+        <Button x:Name="button_TentarNovamente" Content="Tentar novamente" HorizontalAlignment="Left" Margin="98,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.066,-2.223" Click="button_TentarNovamente_Click" IsEnabled="False"/>
+        <Label x:Name="label_IpServer" Content="Seu IP é: xxx.xx.xx.xxx" HorizontalAlignment="Left" Margin="98,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="297"><Run Language="pt-br" Text="Informe seu IP para seu amigo para que ele se conecte."/></TextBlock>
+        <ProgressBar HorizontalAlignment="Left" Height="13" Margin="10,85,0,0" VerticalAlignment="Top" Width="290" IsIndeterminate="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="88,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="131"><Run Language="pt-br" Text="Aguardando conexões..."/></TextBlock>
+        <Label x:Name="label_ClienteConectou" Content="xxx.xx.xx.xxx se conectou!" HorizontalAlignment="Left" Margin="83,196,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+    </Grid>
+</Page>

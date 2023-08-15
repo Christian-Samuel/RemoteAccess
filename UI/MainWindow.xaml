@@ -1,0 +1,13 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Remote Access" Height="275" Width="275" RenderTransformOrigin="0.5,0.5" MaxWidth="275" MaxHeight="275" MinWidth="275" MinHeight="275" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF0FE0D1">
+    <Grid Margin="0,0,10,6">
+        <Button Content="Iniciar servidor" HorizontalAlignment="Left" Margin="80,39,0,0" VerticalAlignment="Top" Height="42" Width="106" Click="ButtonStartServer_Click" RenderTransformOrigin="0.463,-0.298" Grid.ColumnSpan="2" x:Name="buttonStartServer"/>
+        <Button Content="Iniciar cliente" HorizontalAlignment="Left" Margin="80,146,0,0" VerticalAlignment="Top" Height="42" Width="106" ToolTip="Irá compartilhar a tela" Grid.ColumnSpan="2" Click="Button_Click"/>
+    </Grid>
+</Window>
